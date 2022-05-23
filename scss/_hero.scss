@@ -27,8 +27,6 @@
         order: 2;
         height: 41rem;
         background-image: none;
-        //background-image: url('/images/bg-intro-desktop.svg');
-        //background-position: left center;
       }
     }
 
@@ -46,11 +44,6 @@
     &__text {
         text-align: center;
         padding: 5%;
-
-        h1 {
-            margin-top: 0;
-            font-weight: 300px;
-        }
 
         @include breakpoint-up(large){
             text-align: left;

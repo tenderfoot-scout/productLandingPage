@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Qwitcher+Grypen&display=swap');
 
-body {
+html {
     font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $font-sm;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    color: $textgray;
+}
 
-  *, 
-  *::before, 
-  *::after {
-    box-sizing: inherit;
-  }
+//text
 
   a,a:visited,a:hover {
       text-decoration: none;
       color: $white;
   }
+
+//flex
 
   .flex {
       display: flex;
@@ -31,7 +35,7 @@ body {
       }
   }
 
-  //Visibility
+//visibility
 
   .hide-for-mobile {
       @include breakpoint-down(medium){
@@ -45,7 +49,7 @@ body {
       }
   }
 
-  //buttons
+//buttons
 
   button {
       font-family: 'Open Sans', sans-serif;
@@ -58,7 +62,8 @@ body {
       cursor: pointer;
   }
 
-  //Form input
+//form
+
   .form {
     font-size: $font-sm;
     padding: 1em 0.875rem;
