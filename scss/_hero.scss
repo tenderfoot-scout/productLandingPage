@@ -1,0 +1,64 @@
+.hero {
+    @include breakpoint-up(large){
+        display: flex;
+        background-image: url(/assets/hero-bg-4.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        @include breakpoint-up(large){
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__bg {
+    position: relative;
+    background-image: url('/assets/hero-bg-4.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 10.5rem;
+
+    @include breakpoint-up(large){
+        align-items: center;
+        flex: 2;
+        order: 2;
+        height: 41rem;
+        background-image: none;
+        //background-image: url('/images/bg-intro-desktop.svg');
+        //background-position: left center;
+      }
+    }
+
+    &__img {
+        display: block;
+        margin: auto;
+        width: 60%;
+
+        @include breakpoint-up(large){
+          width:100%;
+          }
+        }
+    
+
+    &__text {
+        text-align: center;
+        padding: 5%;
+
+        h1 {
+            margin-top: 0;
+            font-weight: 300px;
+        }
+
+        @include breakpoint-up(large){
+            text-align: left;
+            width: 50vw;
+            margin: auto;
+            padding: 10%;
+        }
+        
+    }
+    
+}

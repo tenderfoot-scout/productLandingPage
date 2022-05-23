@@ -1,0 +1,36 @@
+.header {
+    background-color: $mainpink;
+    width: 100vw;
+    height: 90px;
+
+    nav {
+        padding: 10px; 
+    }
+
+    &__logo {
+        width: 5rem;
+    }
+
+    &__menu {
+        > span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: $white;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+        }
+    }
+
+    &__links {
+        a {
+            font-size: $font-sm;
+            color: $white;
+            padding-left: $font-sm;
+        }
+    }
+
+
+}

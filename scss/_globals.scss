@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Qwitcher+Grypen&display=swap');
+
+body {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  *, 
+  *::before, 
+  *::after {
+    box-sizing: inherit;
+  }
+
+  a,a:visited,a:hover {
+      text-decoration: none;
+      color: $white;
+  }
+
+  .flex {
+      display: flex;
+
+      &-jc-sb {
+          justify-content: space-between;
+      }
+
+      &-ai-c {
+          align-items: center;
+      }
+  }
+
+  //Visibility
+
+  .hide-for-mobile {
+      @include breakpoint-down(medium){
+          display: none;
+      }
+  }
+
+  .hide-for-desktop {
+      @include breakpoint-up(large){
+          display: none;
+      }
+  }
+
+  //buttons
+
+  button {
+      font-family: 'Open Sans', sans-serif;
+      font-size: $font-sm;
+      color: $white;
+      padding: 1em 0.875rem;
+      border-radius: 8px;
+      border: 1px solid $white;
+      background-color: $mainpink;
+      cursor: pointer;
+  }
+
+  //Form input
+  .form {
+    font-size: $font-sm;
+    padding: 1em 0.875rem;
+    border-radius: 8px;
+    border: 0.5px solid grey;
+}

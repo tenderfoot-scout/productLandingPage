@@ -1,0 +1,14 @@
+.newsletter {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 3%;
+
+    &__text {
+        text-align: center;
+        margin: 3%;
+    }
+}

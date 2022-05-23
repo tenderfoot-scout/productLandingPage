@@ -1,12 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="stylesheet" href="scss/styles.css" />
+      <title>Document</title>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+          <nav class="flex flex-jc-sb flex-ai-c">
+              <a href="/" class="logo">
+                  <img src="/assets/foodpanda-logo-mobile.png" class="header__logo" alt="Foodpanda">
+              </a>
     
-</body>
-</html>
+              <a href="#" class="header__menu hide-for-desktop">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </a>
+
+              <div class="header__links hide-for-mobile">
+                  <a href="#feature">About Us</a>
+                  <a href="#learn">Learn More</a>
+                  <a href="#newsletter">Newsletter</a>
+
+              </div>
+              
+              <button type="button" class="hide-for-mobile">
+                <a href="https://play.google.com/store/apps/details?id=com.global.foodpanda.android&hl=en&gl=US" target="_blank">
+                  Download Now
+                </a>
+              </button>
+          </nav>
+        </header>
+
+        <section class="hero">
+          <div class="hero__bg">
+            <img src="/assets/paupau-gif.gif" class="hero__img" />
+          </div>
+
+          <div class="container">
+            <div class="hero__text container--pall">
+              <h1>Restaurants and Groceries at your fingertips.</h1>
+              <p>
+                Get food delivered to you on demand from over thousands of restaurants and shops all over the Philippines.
+              </p>
+              <form>
+                <input class="form" type="search" placeholder="Delivery Location" aria-label="Search">
+                <button>Delivery</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="features" id="feature"></div>
+          <div class="features__text">
+            <h2>Why Foodpanda?</h2>
+            <p>Would you like millions of new customers to enjoy your amazing food and groceries? So would we! It's simple: we list your menu and products online, help you process orders, pick them up,and deliver them to hungry pandas – all in a heartbeat! Interested? Let's start our partnership today!</p>
+            <button>Order Now!</button>
+          </div>
+        </section>
+
+        <section class="learn" id="learn">
+          <iframe class="video" src="https://www.youtube.com/embed/s5yMt1X1L0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="learn__content">
+              <img src="/assets/hero-img-2.png" class="learn__img" />
+              <div class="download-btn">
+                <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
+              </div>
+            </div>
+        </section>
+        
+        <section class="newsletter" id="newsletter">
+          <div class="newsletter__text">
+            Sign up for our newsletter and get 90% off on your next order!
+          </div>
+          <form id="email" method="get" action="#">
+            <input required id="email" class="form" type="email" placeholder="Your e-mail">
+            <button form="email" type="submit">Subscribe</button>
+          </form>
+        </section>
+
+    </body>
+  </html>

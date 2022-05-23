@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&family=Qwitcher+Grypen&display=swap");
+body {
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  padding: 1em 0.875rem;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: #d70f64;
+  cursor: pointer;
+}
+
+.form {
+  font-size: 0.875rem;
+  padding: 1em 0.875rem;
+  border-radius: 8px;
+  border: 0.5px solid grey;
+}
+
+.header {
+  background-color: #d70f64;
+  width: 100vw;
+  height: 90px;
+}
+
+.header nav {
+  padding: 10px;
+}
+
+.header__logo {
+  width: 5rem;
+}
+
+.header__menu > span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: white;
+}
+
+.header__menu > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.header__links a {
+  font-size: 0.875rem;
+  color: white;
+  padding-left: 0.875rem;
+}
+
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(/assets/hero-bg-4.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.hero__bg {
+  position: relative;
+  background-image: url("/assets/hero-bg-4.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 10.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero__bg {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 41rem;
+    background-image: none;
+  }
+}
+
+.hero__img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+@media (min-width: 64em) {
+  .hero__img {
+    width: 100%;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  padding: 5%;
+}
+
+.hero__text h1 {
+  margin-top: 0;
+  font-weight: 300px;
+}
+
+@media (min-width: 64em) {
+  .hero__text {
+    text-align: left;
+    width: 50vw;
+    margin: auto;
+    padding: 10%;
+  }
+}
+
+.features {
+  min-height: 45vh;
+  background-image: url("https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/3040d893-f3e2-4413-bb4d-f5d4c233913b_riders.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.features__text {
+  width: 75vw;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #363232;
+  background-color: white;
+  border: 1px solid lightgray;
+  -webkit-box-shadow: 4px 5px lightgray;
+          box-shadow: 4px 5px lightgray;
+  border-radius: 5px;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4%;
+}
+
+.learn {
+  margin-top: 20px;
+  background-color: #d70f64;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .learn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.learn__content {
+  margin: auto;
+}
+
+.learn__img {
+  height: 50vh;
+}
+
+.video {
+  width: 100vw;
+  min-height: 40vh;
+}
+
+@media (min-width: 64em) {
+  .video {
+    width: 50vw;
+    min-height: 40vh;
+    margin: 5%;
+  }
+}
+
+@font-face {
+  font-family: "fontfutura";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a.btn-google {
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:active:focus, .btn:focus {
+  outline: 0;
+}
+
+.btn:focus, .btn:hover {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+
+.btn:active {
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-google {
+  color: #fff;
+  background-color: #111;
+  border-color: #000;
+  padding: 15px 16px 5px 40px;
+  position: relative;
+  font-family: fontfutura;
+  font-weight: 600;
+}
+
+.btn-google:focus {
+  color: #fff;
+  background-color: #555;
+  border-color: #000;
+}
+
+.btn-google:active, .btn-google:hover {
+  color: #fff;
+  background-color: #555;
+  border-color: #000;
+}
+
+.btn-google:before {
+  content: "";
+  background-image: url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.btn-google:after {
+  content: "GET IT ON";
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.newsletter {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+  margin-bottom: 3%;
+}
+
+.newsletter__text {
+  text-align: center;
+  margin: 3%;
+}
+/*# sourceMappingURL=styles.css.map */

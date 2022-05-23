@@ -1,0 +1,26 @@
+.features {
+    min-height: 45vh;
+    background-image: url('https://assets-metrostyle.abs-cbn.com/prod/metrostyle/attachments/3040d893-f3e2-4413-bb4d-f5d4c233913b_riders.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+     
+
+     &__text {
+         width: 75vw;
+         margin-top: -100px;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         color: rgb(54, 50, 50); 
+         background-color: rgb(255, 255, 255);
+         border: 1px solid lightgray;
+         box-shadow: 4px 5px lightgray;
+         border-radius: 5px;
+         min-height: 30vh;
+         display: flex;
+         flex-direction: column;
+         padding: 4%;         
+     }
+    
+}   
